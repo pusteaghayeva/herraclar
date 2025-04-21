@@ -1,0 +1,46 @@
+:root {
+    --managementTextColor: #7D7987;
+    --menuColor: #8C8999;
+    --dateColor: #585858;
+    --navBg: #023460;
+    --whiteColor: rgba(255, 255, 255, 1);
+    --announcementColor: rgba(2, 52, 96, 1);
+    --activeTitle: #C11E1E;
+    --titleAnnouncement: #414242;
+    --listBg: #FFFFFF;
+    --listColor: #076BA9;
+    --postSlideBg: #F3EFEF;
+    --currentOffer: #505051;
+    --currentOfferNumber: #000000;
+    --auctionDate: #818385;
+    --auctionDateRed: #EB0B0B;
+    --auctionMore: #1E8FF2;
+    --auctionLink: #063B8A;
+    --newsContent: #393929;
+    --newsDate: #7A7A7A;
+    --allNewsBg: #FFFDFD;
+    --footerBg: #00284B;
+    --subMenuFooter: #FFEEC6;
+    --footerMenu: #E8ECF1;
+
+
+    /* 
+    --fontBg: #F9FCFE;
+    --menuColorActive: #1F1534;
+    --inputBg: #007299;
+    --langColor: #033C48;
+    --whiteColor: #ffffff;
+    --managementTitleColor: #000000;
+    --moreBtn: #04789D;
+    --serviceBg: #F9FCFE;
+    --countColor: #0069AB;
+    --count: #6D6D6D;
+    --more: #4089ED;
+    --allNews: #458FF6;
+    --servicesBg: #E1EFF8;
+    --faqBorder: #A5B8BF;
+    --faqColor: #6D6D6D;
+    --linkColor: #193F64;
+    --socialLinkBg: #7E7F7F; */
+}
+
