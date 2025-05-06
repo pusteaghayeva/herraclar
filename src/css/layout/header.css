@@ -99,6 +99,7 @@ body {
     background: var(--navBg);
     height: 52px;
     border-radius: 12px;
+    z-index: 5;
 }
 
 .navbar-toggler-icon {
@@ -336,10 +337,11 @@ body {
         width: 20px;
         height: 20px;
     }
-    .nav .navbar-nav{
+
+    .nav .navbar-nav {
         margin-left: 0;
     }
-   
+
     .header-small {
         display: flex;
         align-items: center;
@@ -365,5 +367,3 @@ body {
 
 
 }
-
-/* test */

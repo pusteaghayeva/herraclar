@@ -1,0 +1,70 @@
+.laws {
+    margin: 68px 0;
+}
+
+.laws-title {
+    color: var(--lawsColor);
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.laws-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 20%;
+    height: 2px;
+    background-color: var(--lawsColor);
+}
+
+.laws-blog {
+    margin: 12px 0;
+    background-color: var(--lawBg);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+    border-radius: 8px;
+    border-left: 5px solid var(--lawsColor);
+    border-top-left-radius: 10px;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Müasir kölgə effekti */
+}
+
+.laws-blog:hover {
+    background-color: var(--lawHoverBg);
+    /* Yeni hover fonu */
+    transform: scale(1.02);
+    /* Elementi böyüt */
+    border-left: 5px solid var(--lawsColor);
+    /* Borderin daha cəlbedici olması */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    /* Hover zamanı daha dərin kölgə */
+}
+
+.laws-abs {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    /* Başlangıçda görünməz */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    /* Yazının animasiyası */
+}
+
+.laws-blog:hover .laws-abs {
+    opacity: 1;
+    /* Hover zamanı görünür */
+    transform: translate(-50%, -50%) scale(1.05);
+    /* Mərkəzdən böyüyür */
+}

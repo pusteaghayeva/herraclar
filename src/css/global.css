@@ -6,3 +6,12 @@
 @import url('./layout/header.css');
 @import url('./layout/footer.css');
 @import url('./main.css');
+@import url('./pages/state_property.css');
+@import url('./pages/management.css');
+@import url('./pages/static.css');
+@import url('./pages/laws.css');
+@import url('./pages/photo.css');
+@import url('./pages/contact.css');
+@import url('./pages/municipal_lands.css');
+@import url('./pages/enforcement_service.css');
+@import url('./pages/all_lots.css');

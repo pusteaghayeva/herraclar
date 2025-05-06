@@ -122,4 +122,34 @@ $(document).ready(function () {
 
     });
 
-})(jQuery); 
+})(jQuery);
+
+// select
+document.querySelectorAll('.search_location .dropdown-input').forEach(input => {
+    input.addEventListener('click', function (e) {
+        e.stopPropagation(); // klik bubble qarşısını alırıq
+
+        const wrapper = this.closest('.dropdown-wrapper');
+        const list = wrapper.querySelector('.dropdown-list');
+
+        // Digər açıq dropdown-ları bağla, yalnız .search_location içində
+        document.querySelectorAll('.search_location .dropdown-list').forEach(dl => {
+            if (dl !== list) {
+                dl.style.display = 'none';
+            }
+        });
+
+        // Öz dropdown-u aç
+        list.style.display = list.style.display === 'block' ? 'none' : 'block';
+    });
+});
+
+// Kənara klik edəndə bütün dropdown-ları bağla (yalnız .search_location daxilində)
+document.addEventListener('click', function (e) {
+    document.querySelectorAll('.search_location .dropdown-list').forEach(list => {
+        list.style.display = 'none';
+    });
+});
+
+// calendar
+// all_lots

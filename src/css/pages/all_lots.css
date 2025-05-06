@@ -1,0 +1,33 @@
+.all_lots_search {
+    /* background-color: red; */
+}
+
+.all_lots_search input {
+    height: 56px;
+    padding-left: 50px;
+
+
+}
+
+.all_lots_search input::placeholder {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--allLotsSearch);
+   
+}
+
+.all_lots_search form {
+    position: relative;
+    width: 50%;
+}
+.all_lots_search button{
+    position: absolute;
+    top: 20%;
+}
+
+.accordion .accordion-lots{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
