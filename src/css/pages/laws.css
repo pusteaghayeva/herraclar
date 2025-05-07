@@ -24,29 +24,23 @@
 .laws-blog {
     margin: 12px 0;
     background-color: var(--lawBg);
-    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     position: relative;
-    padding: 20px;
+    padding: 28px 22px;
     border-radius: 8px;
     border-left: 5px solid var(--lawsColor);
     border-top-left-radius: 10px;
     transition: all .4s ease-in-out;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    /* Müasir kölgə effekti */
 }
 
 .laws-blog:hover {
     background-color: var(--lawHoverBg);
-    /* Yeni hover fonu */
     transform: scale(1.02);
-    /* Elementi böyüt */
     border-left: 5px solid var(--lawsColor);
-    /* Borderin daha cəlbedici olması */
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-    /* Hover zamanı daha dərin kölgə */
 }
 
 .laws-abs {
@@ -57,14 +51,35 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    /* Başlangıçda görünməz */
     transition: opacity 0.3s ease, transform 0.3s ease;
-    /* Yazının animasiyası */
 }
 
 .laws-blog:hover .laws-abs {
     opacity: 1;
-    /* Hover zamanı görünür */
     transform: translate(-50%, -50%) scale(1.05);
-    /* Mərkəzdən böyüyür */
+}
+
+.laws-blog-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--announcementColor);
+
+}
+
+@media only screen and (max-width: 992px) {
+    .laws-blog {
+        margin: 20px 0;
+    }
+
+    .laws-title::after {
+        width: 100%;
+    }
+
+    .laws-blog-title {
+        font-size: 16px;
+    }
+
+
 }

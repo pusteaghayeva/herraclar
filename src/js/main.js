@@ -40,11 +40,24 @@ $(document).ready(function () {
 });
 
 // all news
+// $(document).ready(function () {
+//     $("#news-slider").owlCarousel({
+//         items: 4,
+//         itemsDesktop: [1199, 3],
+//         itemsDesktopSmall: [980, 2],
+//         itemsMobile: [600, 1],
+//         navigation: true,
+//         navigationText: ["", ""],
+//         pagination: true,
+//         autoPlay: true
+//     });
+// });
+
 $(document).ready(function () {
-    $("#news-slider").owlCarousel({
-        items: 4,
-        itemsDesktop: [1199, 3],
-        itemsDesktopSmall: [980, 2],
+    $("#news-slider4").owlCarousel({
+        items: 2,
+        itemsDesktop: [1199, 2],
+        itemsDesktopSmall: [980, 1],
         itemsMobile: [600, 1],
         navigation: true,
         navigationText: ["", ""],
@@ -153,3 +166,44 @@ document.addEventListener('click', function (e) {
 
 // calendar
 // all_lots
+const links = document.querySelectorAll('#myTab .nav-link');
+const contents = document.querySelectorAll('.tab-content');
+
+links.forEach(link => {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Əgər disabled-dirsə, heç nə etmə
+        if (link.classList.contains('disabled')) return;
+
+        // Bütün linklərdən 'active' class-ı sil
+        links.forEach(l => l.classList.remove('active'));
+
+        // Hazırkı linkə 'active' əlavə et
+        this.classList.add('active');
+
+        // Bütün məzmun hissələrini gizlət
+        contents.forEach(c => c.classList.remove('active'));
+
+        // Hansı məzmun göstəriləcək?
+        const targetId = this.getAttribute('data-target');
+        document.getElementById(targetId).classList.add('active');
+    });
+});
+
+
+// single news
+$(document).ready(function () {
+    $("#carousel3").owlCarousel({
+        items: 2,
+        itemsDesktop: [1199, 2],
+        itemsDesktopSmall: [980, 2],
+        itemsMobile: [600, 1],
+        navigation: true,
+        navigationText: ["", ""],
+        pagination: true,
+        autoPlay: true,
+    });
+});
+
+
