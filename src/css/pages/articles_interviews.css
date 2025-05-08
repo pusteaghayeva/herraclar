@@ -1,0 +1,286 @@
+/* .articles_interviews_title::after {
+    width: 25%;
+    bottom: -8px;
+}
+
+.articles_interviews_blogs {
+    margin: 12px 0;
+    background-color: var(--lawBg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 28px 22px;
+    border-radius: 8px;
+    border-left: 5px solid var(--lawsColor);
+    border-top-left-radius: 10px;
+    transition: all .4s ease-in-out;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.articles_interviews_flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.interview-img {
+    width: 100%;
+    height: 100%;
+    width: 347px;
+    height: 176px;
+    object-fit: cover;
+}
+
+.articles_interviews_blogs:hover {
+    background-color: var(--lawHoverBg);
+    transform: scale(1.02);
+    border-left: 5px solid var(--lawsColor);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.interview-more {
+    transition: all 0.6s ease-in-out;
+
+}
+
+.interview-more:hover {
+    text-decoration: underline;
+    transition: all 0.6s ease-in-out;
+}
+
+.articles_interviews_blogs:hover .interview-abs {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.interview-blog-title {
+    margin: 0 32px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.interview-more {
+    color: var(--lawsColor);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    display: block;
+    text-align: right;
+    margin: 24px 0;
+}
+
+@media only screen and (max-width: 992px) {
+    .articles_interviews_blogs {
+        margin: 20px 0;
+    }
+
+    .interview-blog-title {
+        font-size: 16px;
+    }
+} */
+
+.articles_interviews_title {
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    margin-bottom: 56px;
+    color: var(--lawsColor);
+}
+
+.articles_interviews_title::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 25%;
+    height: 2px;
+    /* background: linear-gradient(to right, var(--lawsColor), var(--lawHoverBg)); */
+    border-radius: 2px;
+}
+
+.articles_interviews_blogs {
+    margin: 25px 0;
+    /* background: linear-gradient(135deg, #f8f9fa, #e9ecef); */
+    background-color: var(--lawBg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* gap: 24px; */
+    padding: 24px;
+    border-radius: 12px;
+    border-left: 6px solid var(--lawsColor);
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.articles_interviews_blogs:hover {
+    background: linear-gradient(135deg, var(--lawHoverBg), #ffffff);
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(54, 95, 129, 0.2);
+}
+
+.articles_interviews_flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.interview-img {
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.articles_interviews_blogs:hover .interview-img {
+    transform: scale(1.03);
+}
+
+.interview-content {
+    /* background-color: red; */
+    width: 96%;
+    margin-left: 20px;
+}
+
+.interview-blog-title {
+    /* margin-left: 24px; */
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    flex: 1;
+    position: relative;
+    height: auto;
+    width: 96%;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.interview-more {
+    color: var(--lawsColor);
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    display: block;
+    margin-top: 16px;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    text-align: right;
+
+}
+
+.interview-more:hover {
+    text-decoration: underline;
+    color: darken(var(--lawsColor), 10%);
+}
+
+/* Hover clickable bütün sahəni əhatə edir */
+.interview-abs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.articles_interviews_blogs:hover .interview-abs {
+    opacity: 1;
+}
+
+/* Responsivlik */
+@media (max-width: 992px) {
+    .articles_interviews_title::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        border-radius: 2px;
+    }
+
+    .articles_interviews_flex {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .interview-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .interview-blog-title {
+        margin-left: 0;
+        margin-top: 16px;
+        font-size: 16px;
+    }
+
+    .interview-more {
+        font-size: 16px;
+        text-align: right;
+    }
+    .interview-content {
+        /* background-color: red; */
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+.title-icon {
+    color: var(--lawsColor);
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+/* Hover zamanı şəkil üzərindəki ikon */
+.icon-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 0.4s ease;
+}
+
+.read-icon {
+    font-size: 38px;
+    color: white;
+    background: rgba(0, 48, 87, 0.6);
+    /* background-color: red; */
+    padding: 16px;
+    border-radius: 50%;
+}
+
+.interview-blog-img {
+    position: relative;
+}
+
+.articles_interviews_blogs:hover .icon-overlay {
+    opacity: 1;
+}
+
+/* Ətraflı linki üçün ox ikonuyla birlikdə animasiya */
+.interview-more i {
+    margin-left: 6px;
+    transition: transform 0.3s ease;
+}
+
+.interview-more:hover i {
+    transform: translateX(4px);
+}

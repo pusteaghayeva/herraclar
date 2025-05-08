@@ -140,24 +140,20 @@ $(document).ready(function () {
 // select
 document.querySelectorAll('.search_location .dropdown-input').forEach(input => {
     input.addEventListener('click', function (e) {
-        e.stopPropagation(); // klik bubble qarşısını alırıq
+        e.stopPropagation(); 
 
         const wrapper = this.closest('.dropdown-wrapper');
         const list = wrapper.querySelector('.dropdown-list');
-
-        // Digər açıq dropdown-ları bağla, yalnız .search_location içində
         document.querySelectorAll('.search_location .dropdown-list').forEach(dl => {
             if (dl !== list) {
                 dl.style.display = 'none';
             }
         });
 
-        // Öz dropdown-u aç
         list.style.display = list.style.display === 'block' ? 'none' : 'block';
     });
 });
 
-// Kənara klik edəndə bütün dropdown-ları bağla (yalnız .search_location daxilində)
 document.addEventListener('click', function (e) {
     document.querySelectorAll('.search_location .dropdown-list').forEach(list => {
         list.style.display = 'none';
@@ -173,19 +169,14 @@ links.forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault();
 
-        // Əgər disabled-dirsə, heç nə etmə
         if (link.classList.contains('disabled')) return;
 
-        // Bütün linklərdən 'active' class-ı sil
         links.forEach(l => l.classList.remove('active'));
 
-        // Hazırkı linkə 'active' əlavə et
         this.classList.add('active');
 
-        // Bütün məzmun hissələrini gizlət
         contents.forEach(c => c.classList.remove('active'));
 
-        // Hansı məzmun göstəriləcək?
         const targetId = this.getAttribute('data-target');
         document.getElementById(targetId).classList.add('active');
     });
