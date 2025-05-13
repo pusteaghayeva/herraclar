@@ -196,14 +196,14 @@ a {
 
 
 .news .carousel-control-prev {
-    left: -2%;
+    left: -3%;
     width: 20px;
     height: 20px;
     top: 50%;
 }
 
 .news .carousel-control-next {
-    right: -2%;
+    right: -3%;
     width: 20px;
     height: 20px;
     top: 50%;
