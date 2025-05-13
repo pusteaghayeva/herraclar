@@ -196,11 +196,25 @@ a {
 
 
 .news .carousel-control-prev {
-    left: -5%;
+    left: -2%;
+    width: 20px;
+    height: 20px;
+    top: 50%;
 }
 
 .news .carousel-control-next {
-    right: -5%;
+    right: -2%;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+}
+
+.carousel-control-next-icon {
+    background-image: url(/src/img/right.svg);
+}
+
+.carousel-control-prev-icon {
+    background-image: url(/src/img/left.svg);
 }
 
 .announcements-blog {
@@ -220,7 +234,7 @@ a {
     font-weight: 700;
     font-size: 22px;
     padding: 6px 40px;
-    color: var(--announcementColor);
+    color: var(--navBg);
 }
 
 .announcement-content {

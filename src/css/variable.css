@@ -29,9 +29,22 @@
     --announcementColor: #373838;
     --contactFormTitle: #212121;
     --contactBorder1: #E0E7FF;
-    --contactBorder2:  #CFFAFE;
+    --contactBorder2: #CFFAFE;
     --contactBorder3: #FAE8FF;
-    ;
-
+    --applicationBg: #59B970;
+    --items: 3;
+    --gap: 0.75rem;
+    --border-xl: 20px;
+    --border-m: 8px;
+    --border-s: 6px;
+    --accent-color: hsl(198, 86%, 53%);
+    --fill-primary: hsl(204, 3%, 47%);
+    --fill-active: hsl(204, 23%, 20%);
+    --fill-disabled: hsl(204, 9%, 85%);
+    --applicationColor: #F4F4F4;
+    --priceColor: #464646;
+    --noteColor: #D91919;
+    --noteText: #242222;
+    --accordionBg: #F5F5F5;
 
 }
