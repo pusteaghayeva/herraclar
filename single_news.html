@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <header>
+  <header class="position-relative">
         <div class="header-img">
             <a href="./index.html">
                 <img src="./src/img/header.svg" alt="header-img" class="header-img">
@@ -49,12 +49,11 @@
                 </ul>
                 <p class="date-blog" id="date-blog">09.03.2025 / 09:00</p>
             </a>
-
-
-
         </div>
+
+
         <div class="header-small">
-            <div class="container">
+            <div class="container-fluid">
                 <div class="header-small-flex">
                     <ul class="header-small-ul">
                         <li>
@@ -73,9 +72,9 @@
                             </a>
                         </li>
                     </ul>
+
                     <p class="header-small-date" id="date-blog">09.03.2025 / 09:00</p>
                 </div>
-
             </div>
 
         </div>
@@ -132,12 +131,11 @@
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="./state_property.html">Dövlət əmlakı</a></li>
-                                    <li><a class="dropdown-item" href="./state_property.html">Bələdiyyə torpaqları</a>
+                                    <li><a class="dropdown-item" href="./municipal_lands.html">Bələdiyyə torpaqları</a>
                                     </li>
                                     <li><a class="dropdown-item" href="./enforcement_service.html">İcra xidmətinin
                                             sifarişləri</a></li>
-                                    <li><a class="dropdown-item" href="./enforcement_service.html">Digər hərraclar </a>
-                                    </li>
+                                    <li><a class="dropdown-item" href="./enforcement_service.html">Digər hərraclar </a></li>
                                     <li><a class="dropdown-item" href="./all_lots.html">Bütün lotlar </a></li>
                                 </ul>
                             </li>
@@ -165,6 +163,14 @@
                                     Əlaqə
                                 </a>
                             </li>
+                            <form class="d-flex menu-search" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Axtar..."
+                                    aria-label="Search" />
+                                <button class="btn" type="submit">
+                                    <i class="fas fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                            <!-- buradakı form media üçündür. -->
                         </ul>
                         <div class="right-navbar">
                             <div class="collapse navbar-collapse" id="rightNavbarContent">
@@ -193,7 +199,6 @@
                 </nav>
             </div>
         </div>
-
     </header>
 
     <main>
