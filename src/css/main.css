@@ -207,11 +207,14 @@ a {
 }
 
 .carousel-control-next-icon {
-    background-image: url(/src/img/right.svg);
+    /* background-image: url(/src/img/right.svg); */
+    background-image: url(../../img/right.svg);
 }
 
 .carousel-control-prev-icon {
     background-image: url(/src/img/left.svg);
+    background-image: url(../../img/left.svg);
+
 }
 
 .announcements-blog {
