@@ -98,7 +98,7 @@ p {
     width: 1.5em;
     height: 1.5em;
     vertical-align: middle;
-    background-image: url('/src/img/nav.svg');
+    background-image: url(../img/nav.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
