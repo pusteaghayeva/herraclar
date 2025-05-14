@@ -1,10 +1,6 @@
-.all_lots_search {}
-
 .all_lots_search input {
     height: 56px;
     padding-left: 50px;
-
-
 }
 
 .all_lots_search input::placeholder {

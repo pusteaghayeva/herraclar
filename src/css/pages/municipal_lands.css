@@ -61,13 +61,6 @@ select.custom-select option {
     background-color: #f0f0f0;
     color: #333333;
 }
-
-/* .custom-select {
-    background-color: #e6f7ff;
-    color: #005580;
-    border: 1px solid #3399cc;
-} */
-
 .custom-select option {
     background-color: #fff3e6;
     color: #994d00;

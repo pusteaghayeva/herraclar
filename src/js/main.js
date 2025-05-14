@@ -1,4 +1,3 @@
-
 const currentDate = new Date();
 const formattedDate = currentDate.toLocaleString('tr-TR', {
     day: '2-digit',
@@ -11,7 +10,6 @@ const formattedDate = currentDate.toLocaleString('tr-TR', {
 
 
 // active lots
-
 $(document).ready(function () {
     $("#news-slider").owlCarousel({
         items: 4,
@@ -39,20 +37,6 @@ $(document).ready(function () {
     });
 });
 
-// all news
-// $(document).ready(function () {
-//     $("#news-slider").owlCarousel({
-//         items: 4,
-//         itemsDesktop: [1199, 3],
-//         itemsDesktopSmall: [980, 2],
-//         itemsMobile: [600, 1],
-//         navigation: true,
-//         navigationText: ["", ""],
-//         pagination: true,
-//         autoPlay: true
-//     });
-// });
-
 $(document).ready(function () {
     $("#news-slider4").owlCarousel({
         items: 2,
@@ -65,8 +49,8 @@ $(document).ready(function () {
         autoPlay: true
     });
 });
-// active auctions
 
+// active auctions
 $(document).ready(function () {
     $("#news-slider-main").owlCarousel({
         items: 4,
@@ -95,13 +79,11 @@ $(document).ready(function () {
 });
 
 //Scroll back to top
-
 (function ($) {
     "use strict";
 
     $(document).ready(function () {
         "use strict";
-
         var progressPath = document.querySelector('.progress-wrap path');
         var pathLength = progressPath.getTotalLength();
         progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
@@ -228,6 +210,8 @@ const countdown = setInterval(function () {
 
 }, 1000);
 
+
+// single lots
 
 // single lot
 const Carousel = (() => {

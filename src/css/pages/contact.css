@@ -15,20 +15,10 @@
 }
 
 .contact-form-title {
-    /* font-family: "Poppins", sans-serif; */
     font-weight: 500;
     font-size: 16px;
     color: var(--contactFormTitle);
     margin: 24px 0;
-}
-
-.contact {
-    /* background-color: red; */
-}
-
-
-.contact-apply {
-    /* background-color: red; */
 }
 
 .contact-blog .form-group {
@@ -62,7 +52,6 @@
 
 
 .contact-information {
-    /* margin: 20px 0; */
     font-weight: 500;
     font-size: 18px;
 }
@@ -124,7 +113,6 @@
 }
 
 .contact-social-blog {
-    /* background-color: red; */
     margin: 60px 0;
 }
 
@@ -157,7 +145,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .contact-social-blog .row>div:nth-child(1) .contact-border {
@@ -242,11 +229,7 @@
     background-color: #f2f8ff;
     border-color: var(--lawsColor);
 }
-/* .contact-social-bg:hover .contact-border-img,
-.contact-social-link-bg:hover .contact-border-img {
-    transform: rotate(360deg);
-    transition: transform 0.6s ease;
-} */
+
 .contact-social-bg:hover,
 .contact-social-link-bg:hover {
     background: linear-gradient(135deg, #e0f7fa, #e1bee7);
@@ -273,11 +256,6 @@
 .contact-border-img {
     transition: transform 0.6s ease;
 }
-
-/* .contact-social-bg:hover .contact-border-img,
-.contact-social-link-bg:hover .contact-border-img {
-    transform: rotate(360deg);
-} */
 
 @keyframes bounce {
     0%, 100% { transform: translateY(0); }

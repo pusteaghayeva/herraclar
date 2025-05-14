@@ -88,7 +88,6 @@ a {
     line-height: 46px;
     font-size: 24px;
     color: #C11E1E;
-    /* color: var(--countColor); */
     left: 0;
     top: 0;
     height: 46px;
@@ -99,8 +98,6 @@ a {
     -webkit-transition: all 200ms linear;
     transition: all 200ms linear;
 }
-
-.progress-wrap:hover::after {}
 
 .progress-wrap::before {
     position: absolute;
@@ -290,9 +287,7 @@ a {
     box-shadow: -2px 4px 4px 0px #00000073;
 }
 
-/*aktiv lotlar slayd */
-#news-slider {}
-
+/*aktiv lotlar */
 .active-lots {
     margin: 60px 0;
 }
@@ -825,5 +820,3 @@ a {
         height: 110px;
     }
 }
-
-@media only screen and (min-width: 768px) {}
