@@ -1,0 +1,169 @@
+.management-blog {
+    padding: 40px 10px;
+    width: 65%;
+    margin: 0 auto;
+}
+
+.management-title {
+    font-size: 24px;
+    margin: 10px 0 15px;
+}
+
+.management-first-blog {
+    display: flex;
+    border: 1px solid #c0c2c7;
+    border-radius: 4px;
+    overflow: hidden
+}
+
+.management-img-blog {
+    display: block;
+    width: 300px;
+    height: 250px;
+}
+
+.management-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.management-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.management-duty {
+    color: #2373b4;
+    font-weight: 500;
+}
+
+.minister-name {
+    font-weight: 500;
+
+}
+
+.management-about {
+    color: rgb(148, 144, 144);
+}
+
+.management-more {
+    color: #2373b4;
+}
+
+.management-more i {
+    margin-left: 10px;
+    transition: all .5s ease-in-out;
+}
+
+.management-more:hover i {
+    margin-left: 20px;
+}
+
+.management-col {
+    background-color: #fff;
+    margin: 12px 0;
+    text-align: center;
+    position: relative;
+    border-radius: 4px;
+    height: calc(100% - 2.4rem);
+    margin-top: 2.4rem;
+    display: block;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+    border: 1px solid #c0c2c7;
+
+}
+
+.management-col:hover {
+    box-shadow: 0 12px 12px rgba(10, 31, 68, .04), 0 16px 24px rgba(10, 31, 68, .04);
+    transition: all 0.4s ease-in-out;
+    transform: scale(1.02);
+
+}
+
+.management-col-img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.management-col-duty {
+    color: #2373b4;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.management-col-name {
+    color: #000;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+}
+
+.management-pos {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .management-blog {
+        width: 100%;
+    }
+
+    .management-img-blog {
+        height: auto;
+    }
+
+    .management-first-blog {
+        display: block;
+    }
+
+    .management-col {
+        background-color: transparent;
+    }
+
+    .management-col-img {
+        height: auto;
+        min-height: 220px;
+    }
+
+    .management-about {
+        height: auto;
+    }
+
+    .minister-name {
+        margin: 5px 0;
+    }
+
+    .management-col-duty {
+        height: auto;
+    }
+
+    .management-col-duty {
+        padding: 0 10px;
+        text-align: left;
+    }
+
+    .management-col-name {
+        height: auto;
+        justify-content: flex-start;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width:1200px) {
+    .management-blog {
+        width: 85%;
+        width: 100%;
+    }
+}

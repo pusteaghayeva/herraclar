@@ -124,6 +124,13 @@ footer {
 
 }
 
+.footer-left {
+    width: 50%;
+}
+
+.responsive-map {
+    width: 50%
+}
 
 @media only screen and (max-width: 1440px) {
     .responsive-map iframe {
@@ -137,11 +144,18 @@ footer {
     }
 }
 
-@media only screen and (max-width: 1440px) {}
 
 @media only screen and (max-width: 992px) {
     .responsive-map iframe {
         width: 100%;
+    }
+
+    .footer-left {
+        width: auto;
+    }
+
+    .responsive-map {
+        width: 100%
     }
 }
 
