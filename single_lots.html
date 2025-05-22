@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/unicons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="./src/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.css">
     <link rel="stylesheet" href="./src/css/global.css">
 </head>
 
@@ -27,7 +28,7 @@
 
     </div>
 
- <header class="position-relative">
+    <header class="position-relative">
         <div class="header-img">
             <a href="./index.html">
                 <img src="./src/img/header.svg" alt="header-img" class="header-img">
@@ -136,7 +137,8 @@
                                     </li>
                                     <li><a class="dropdown-item" href="./enforcement_service.html">İcra xidmətinin
                                             sifarişləri</a></li>
-                                    <li><a class="dropdown-item" href="./enforcement_service.html">Digər hərraclar </a></li>
+                                    <li><a class="dropdown-item" href="./enforcement_service.html">Digər hərraclar </a>
+                                    </li>
                                     <li><a class="dropdown-item" href="./all_lots.html">Bütün lotlar </a></li>
                                 </ul>
                             </li>
@@ -207,6 +209,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8">
+                        <!-- <div class="carousel-container">
+                            <button class="arrow arrow-left" aria-label="Previous">&#10094;</button>
+                            <img id="carousel-image" src="./src/img/lot1.png" alt="Karusel Şəkil" loading="lazy" />
+                            <button class="arrow arrow-right" aria-label="Next">&#10095;</button>
+                        </div>
                         <div class="image-thumbnail-carousel">
                             <section class="image-display">
                                 <div class="screen"></div>
@@ -250,6 +257,43 @@
                                     </svg>
                                 </button>
                             </section>
+                        </div> -->
+                        <!-- スライダー -->
+                        <div class="swiper-container slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample010.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample005.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample012.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample007.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample008.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample009.jpg"
+                                        alt=""></div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+
+                        <!-- サムネイル -->
+                        <div class="swiper-container slider-thumbnail">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample010.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample005.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample012.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample007.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample008.jpg"
+                                        alt=""></div>
+                                <div class="swiper-slide"><img src="//into-the-program.com/demo/images/sample009.jpg"
+                                        alt=""></div>
+                            </div>
                         </div>
 
                         <div class="single-lots-categories">
@@ -573,7 +617,8 @@
     <script src="./src/js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <!-- <script src="./src/js/main.js"></script> -->
-     <script src="./src/js/single_lots.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js"></script>
+    <script src="./src/js/single_lots.js"></script>
 </body>
 
 </html>

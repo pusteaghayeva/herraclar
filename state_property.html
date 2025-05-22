@@ -26,7 +26,7 @@
         </div>
     </div>
 
-   <header class="position-relative">
+    <header class="position-relative">
         <div class="header-img">
             <a href="./index.html">
                 <img src="./src/img/header.svg" alt="header-img" class="header-img">
@@ -135,7 +135,8 @@
                                     </li>
                                     <li><a class="dropdown-item" href="./enforcement_service.html">İcra xidmətinin
                                             sifarişləri</a></li>
-                                    <li><a class="dropdown-item" href="./enforcement_service.html">Digər hərraclar </a></li>
+                                    <li><a class="dropdown-item" href="./enforcement_service.html">Digər hərraclar </a>
+                                    </li>
                                     <li><a class="dropdown-item" href="./all_lots.html">Bütün lotlar </a></li>
                                 </ul>
                             </li>
@@ -217,21 +218,21 @@
                                 <a href="" class="filters-name">Faydalı qazıntı yataqları</a>
                                 <a href="" class="filters-name">Gömrük hərracı</a>
                                 <a href="" class="filters-name">Digər dövlət əmlakı</a>
+                               
+
                                 <div class="search_location">
-                                    <div class="dropdown-wrapper">
-                                        <!-- <label for="auctionInput"></label> -->
+                                    <div class="dropdown-wrapper" style="position: relative;">
                                         <input type="text" id="auctionInput" class="dropdown-input"
-                                            placeholder="Məkana görə axtar">
-                                        <span class="dropdown-icon">
-                                            <i class="fa-solid fa-chevron-down"></i>
-                                        </span>
-                                        <div class="dropdown-list" id="dropdownList">
-                                            <div>Azərbaycan Beynəlxalq Bankı ASC – 25.12.2024</div>
-                                            <div>Gömrük hərracı – 07.11.2024</div>
-                                            <div>Aqrarkredit – 16.10.2024</div>
-                                            <div>Vergi hərracı – 16.10.2024</div>
-                                            <div>Azərbaycan Xəzər Dəniz Gəmiçiliyi – 26.12.2024</div>
-                                            <div>Oduncaq(işlik) – 17.10.2024</div>
+                                            placeholder="Məkana görə axtar" autocomplete="off">
+                                        <input type="hidden" id="auctionValue">
+                                        <div class="dropdown-list" id="dropdownList"
+                                            style="display: none; position: absolute; top: 100%; left: 0; width: 100%; background: #fff; border: 1px solid #ccc; z-index: 999;">
+                                            <div data-value="1">Azərbaycan Beynəlxalq Bankı ASC – 25.12.2024</div>
+                                            <div data-value="2">Gömrük hərracı – 07.11.2024</div>
+                                            <div data-value="3">Aqrarkredit – 16.10.2024</div>
+                                            <div data-value="4">Vergi hərracı – 16.10.2024</div>
+                                            <div data-value="5">Azərbaycan Xəzər Dəniz Gəmiçiliyi – 26.12.2024</div>
+                                            <div data-value="6">Oduncaq(işlik) – 17.10.2024</div>
                                         </div>
                                     </div>
                                 </div>
@@ -249,15 +250,6 @@
                                             </form>
                                         </div>
 
-
-                                        <div class="dropdown-list" id="dropdownList">
-                                            <div>Azərbaycan Beynəlxalq Bankı ASC – 25.12.2024</div>
-                                            <div>Gömrük hərracı – 07.11.2024</div>
-                                            <div>Aqrarkredit – 16.10.2024</div>
-                                            <div>Vergi hərracı – 16.10.2024</div>
-                                            <div>Azərbaycan Xəzər Dəniz Gəmiçiliyi – 26.12.2024</div>
-                                            <div>Oduncaq(işlik) – 17.10.2024</div>
-                                        </div>
                                     </div>
                                 </div>
 
@@ -277,7 +269,7 @@
 
                                 </div>
 
-              
+
 
                                 <div class="section-date">
                                     <div class="section-title">Hərracın tarix aralığı</div>
@@ -554,6 +546,8 @@
     <script src="./src/js/bootstrap.bundle.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
     <script src="./src/js/main.js"></script>
+    <script src="./src/js/state_property.js"></script>
+
 </body>
 
 </html>
