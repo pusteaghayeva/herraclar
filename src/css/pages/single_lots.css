@@ -385,21 +385,12 @@
 }
 
 
-
-/* test */
-img {
-    width: 100%;
-}
-
 .swiper-container {
     width: 100%;
     max-width: 940px;
     margin-bottom: 20px;
 }
 
-/* .swiper-container.slider {
-	 height: 80vh;
-} */
 .swiper-container.slider-thumbnail {
     height: 20vh;
 }
@@ -407,7 +398,6 @@ img {
 .swiper-container.slider-thumbnail .swiper-wrapper .swiper-slide {
     width: 25%;
     height: 100%;
-    /* opacity: 0.5; */
     overflow: hidden;
     margin: 0 5px;
     border-radius: 10px;
