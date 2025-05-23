@@ -245,7 +245,7 @@
     border: 1px solid #1E8FF280;
     font-weight: 500;
     font-size: 16px;
-    text-align: center;
+    /* text-align: center; */
     background-color: #DAEEFF8A;
     padding: 10px 50px;
 
@@ -255,6 +255,12 @@
     background-color: #DAEEFF8A;
     border: 1px solid #1E8FF280;
 
+}
+
+
+.active-lots-dropdown-toggle:focus-visible {
+    border: none !important;
+    /* background-color: pink; */
 }
 
 .active-lots-dropdown-toggle:active {
