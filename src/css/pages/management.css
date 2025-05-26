@@ -18,16 +18,10 @@
     margin: 10px 0;
 }
 
-.management-blog:after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: var(--lawsColor);
+.management-hr {
+    border: 1px solid var(--lawsColor);
 }
 
-.management-blog:last-child::after {
+.management-blog:last-child .management-hr {
     display: none;
 }

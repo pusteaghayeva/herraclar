@@ -14,7 +14,7 @@
 .laws-title::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: -10px;
     left: 0;
     width: 20%;
     height: 2px;
