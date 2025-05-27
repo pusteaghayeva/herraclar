@@ -308,7 +308,7 @@
     font-size: 20px;
     background-color: transparent;
     border: none;
-    padding: 0px;
+    padding: 20px 10px;
 }
 
 .single-lots-categories .accordion-item:first-of-type {
@@ -319,9 +319,14 @@
     box-shadow: none;
 }
 
-.single-lots-categories .accordion-header {
-    margin: 12px 0;
+.single-lots-categories .accordion-item {
+    margin-bottom: 30px;
+    /* background-color: red; */
 }
+
+/* .single-lots-categories .accordion-header {
+    margin: 12px 0;
+} */
 
 .single-lots-categories .accordion .accordion-body {
     padding: 16px 0;
@@ -362,9 +367,9 @@
     margin: 26px 0;
 }
 
-.single-lots-categories .accordion .accordion-body {
+/* .single-lots-categories .accordion .accordion-body {
     margin: 16px 0;
-}
+} */
 
 @media only screen and (max-width: 576px) {
     .price-blogs {

@@ -409,6 +409,11 @@ a {
     color: var(--auctionDateRed);
 }
 
+.active-lots .post-slide .post-date-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 .active-lots .post-slide .read-more {
     float: right;
