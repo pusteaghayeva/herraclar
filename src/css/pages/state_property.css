@@ -18,7 +18,7 @@
 .state_property_title::after {
     content: '';
     position: absolute;
-    bottom: -25px;
+    bottom: -32px;
     left: 0;
     width: 20%;
     height: 2px;
